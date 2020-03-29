@@ -49,4 +49,4 @@ Using `cron` allows for quick and easy automation of your accountability reporti
 
 An example configuration to send a report once per day at 8:00AM on weekdays is:
 
-`0 8 * * 1-5 /usr/bin/bash -c 'cd /home/user/project && source /home/user/project/.venv/bin/activate && ./accountability.py -c config.yml' > /dev/null 2>&1`
+`0 8 * * 1-5 /usr/bin/env bash -c 'cd /home/user/project && source /home/user/project/.venv/bin/activate && ./accountability.py -c config.yml' > /dev/null 2>&1`
